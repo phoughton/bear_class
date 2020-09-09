@@ -13,7 +13,7 @@ application.config['MAX_CONTENT_LENGTH'] = 2 * 1024 * 1024
 # Workaround pytorch issue with models developed on linux being used on Windows
 if platform.system() == 'Windows':
     pathlib.PosixPath = pathlib.WindowsPath
-git add
+
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'gif'}
 
 learn_inf = load_learner('export.pkl', cpu=True)
